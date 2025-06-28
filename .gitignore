@@ -1,0 +1,16 @@
+# Ignore full virtual environment folder
+yourSmartAssistant/
+venv/
+
+# Bytecode
+__pycache__/
+*.pyc
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Secrets
+.env
+

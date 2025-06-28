@@ -1,0 +1,213 @@
+Input: "Book a table for dinner"
+Output: {
+  "intent_category": "dining_reservation",
+  "key_entities": "``` json{
+    "reservation_type": "table",
+    "meal_type": "dinner"
+  }```",
+  "confidence_score": "1.0",
+  "follow_up_questions": "[
+    "For how many people?",
+    "What date would you like to book the table for?",
+    "And at what time?"
+  ]"
+}
+
+-----------------------------
+
+input2: "Need a sunset-view table for two tonight; gluten-free menu a must"
+output2: {
+  "intent_category": "dining_reservation",
+  "key_entities": "```json{
+    "party_size": 2,
+    "date": "tonight",
+    "table_preference": "sunset-view",
+    "dietary_restrictions": "gluten-free"
+  }````",
+  "confidence_score": "1",
+  "follow_up_questions": "[
+    "Which restaurant would you like to make a reservation for?",
+    "What time would you like the reservation to be tonight?"
+  ]"
+}
+
+-----------------------------
+
+input3: "Need a rooftop table for 4 tonight - we're celebrating a birthday and need vegan options"
+output3: {
+  "intent_category": "dining_reservation",
+  "key_entities": "````json {
+    "seating_preference": "rooftop",
+    "party_size": 4,
+    "date_time": "tonight",
+    "occasion": "birthday",
+    "dietary_preference": "vegan"
+  }```",
+  "confidence_score": "1.0",
+  "follow_up_questions": "[
+    "What time would you like to make the reservation for tonight?",
+    "Which restaurant would you like to book?"
+  ]"
+}
+
+-----------------------------
+
+input4: "Book me a cab from Indiranagar to the airport at 5pm today"
+output4: {
+  "intent_category": "cab_booking",
+  "key_entities": "```json{
+    "pickup_location": "Indiranagar",
+    "dropoff_location": "airport",
+    "time": "17:00",
+    "date": "2023-10-27"
+  }```",
+  "confidence_score": "1",
+  "follow_up_questions": "[
+    "What type of cab would you like to book?",
+    "How many passengers will be traveling?"
+  ]"
+}
+
+-----------------------------
+
+input5: "Schedule a dentist appointment near me on Saturday morning"
+output5: {
+  "intent_category": "medical_appointment_scheduling",
+  "key_entities": "```json{
+    "appointment_type": "dentist",
+    "date": "Saturday",
+    "time_of_day": "morning",
+    "location_descriptor": "near me"
+  }```",
+  "confidence_score": "1.0",
+  "follow_up_questions": "[
+    "Who is this appointment for?",
+    "Could you please provide a specific location or zip code?",
+    "What is the reason for your visit?"
+  ]"
+}
+
+-----------------------------
+
+input6: "Looking for something eco-friendly to gift my sister"
+output6: {
+  "intent_category": "gifting_ideas",
+  "key_entities": "```json{
+    "recipient": "sister",
+    "gift_attributes": "eco-friendly"
+  }```",
+  "confidence_score": "1",
+  "follow_up_questions": "[
+    "What's the occasion you're looking for a gift for?",
+    "What's your budget for the gift?",
+    "What are some of your sister's other interests or hobbies?"
+  ]"
+}
+
+-----------------------------
+
+input7: "Book a life coach for career guidance."
+output7: {
+  "intent_category": "life_coach_booking",
+  "key_entities": "```json{
+    "service_type": "life_coach",
+    "purpose": "career guidance"
+  }```",
+  "confidence_score": "1.0",
+  "follow_up_questions": "[
+    "What date would you like to book the session?",
+    "What time would you prefer for your session?",
+    "How long would you like the session to be?"
+  ]"
+}
+
+-----------------------------
+
+
+input8: "I wish I could teleport to Bali and have sushi on the beach"
+output8: {
+  "intent_category": "expression_of_desire",
+  "key_entities": "```json{
+    "destination": "Bali",
+    "food_item": "sushi",
+    "dining_location": "on the beach"
+  }```",
+  "confidence_score": "1",
+  "follow_up_questions": "[
+    "When would you ideally like to make this trip?",
+    "And for how many people would this be?"
+  ]"
+}
+
+-----------------------------
+
+input9: "Where can I go for a peaceful weekend near Delhi?"
+output9: {
+  "intent_category": "travel_planning",
+  "key_entities":"```json {
+    "destination_base": "Delhi",
+    "destination_proximity": "near",
+    "travel_duration": "weekend",
+    "travel_vibe": "peaceful"
+  }```",
+  "confidence_score": "1",
+  "follow_up_questions": "[
+    "Do you have a specific budget in mind for this trip?",
+    "How many people will be traveling?",
+    "What kind of peaceful activities or experiences are you hoping to find?",
+    "Do you have any preferences for accommodation, such as a resort, a quiet homestay, or something else?"
+  ]"
+}
+
+-----------------------------
+
+input10: "Want to book a holiday for Goa next weekend"
+output10: {
+  "intent_category": "travel_planning",
+  "key_entities": "```json{
+    "destination": "Goa",
+    "date_range": "next weekend"
+  }```",
+  "confidence_score": "1.0",
+  "follow_up_questions": "[
+    "How many people will be traveling?",
+    "What is your departure city?",
+    "Are you looking for flights, accommodation, or a complete package?"
+  ]"
+}
+
+
+
+###### BONUS ######
+
+query: How to update phone number associated with aadhar
+output: 
+{"search_response":[
+  {"title":"Aadhar Card Mobile Number Change - How to change Mobile Number in ...",
+  "url":"https://cleartax.in/s/how-to-update-mobile-number-in-aadhaar-card",
+  "description":"Thus, it is essential to update your mobile number with the UIDAI and ensure that the mobile number in use is linked to your Aadhaar card. There is no restriction on the number of times you can update"},
+
+  {"title":"Updating data on Aadhaar - Unique Identification Authority of India",
+  "url":"https://uidai.gov.in/en/my-aadhaar/about-your-aadhaar/updating-data-on-aadhaar.html",
+  "description":"Done by the operator on update client as requested by the Aadhaar number holder. Handles spelling, language issues, transliteration, etc. Operator will provide biometric sign off against every update "},
+
+  {"title":"How to change phone number in Aadhaar card online: step-by-step guide",
+  "url":"https://www.indiatoday.in/technology/tech-tips/story/how-to-change-phone-number-on-aadhaar-card-online-step-by-step-guide-2348985-2023-03-20",
+  "description":"Fill out the Aadhaar Update/Correction form. - Recheck and submit your form to the Aadhaar executive. - You will be charged a minimal service of Rs 50 for the update. Pay the fee to the Aadhaar execut"}],
+
+  "confidence_score":"0.2"}
+
+
+  query2: how to apply for passport
+  {"search_response":[
+    
+    {"title":"U.S. passports - USAGov","url":"https://www.usa.gov/passport",
+    "description":"Learn how to get a passport for travel to most countries outside the U.S. Find out if you can renew by mail or online, or if you need a new one, and what to do if your passport is lost or stolen."},
+
+    {"title":"Passports - U.S. Embassy & Consulates in India","url":"https://in.usembassy.gov/u-s-citizen-services/passports/",
+    "description":"The processing time for routine passport renewals in India is 2-3 weeks. If you are traveling within the next 2 weeks, please review our emergency passport information page. Key Passport Services. By "},
+
+    {"title":"Prepare to Apply for a Passport Homepage - Travel","url":"https://travel.state.gov/content/travel/en/passports/how-apply.html",
+    "description":"Learn how to fill out your form, submit your photo, and provide evidence of U.S. citizenship and photo ID for your passport application. Find out the processing times, costs, and requirements for diff"}],
+  
+  "confidence_score":"0.1"}
