@@ -41,7 +41,7 @@ The backend API is built using Python, and the frontend UI is built with Streaml
    pip install -r requirements.txt
    ```
 
-4. Set up environment variables in .env:
+4. Create a .env file in the root directory with the following content and set up environment variables:
    - add api_key
    - add model_name
 
